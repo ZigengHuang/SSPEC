@@ -4,7 +4,7 @@ SSPEC is a medical assistant chatbox based on ChatGPT and it involves three func
 - Please feel free to contact us for any questions or comments: Zigeng Huang, E-mail: yuuko_huang@pumc.edu.cn; Erping Long, E-mail: erping.long@ibms.pumc.edu.cn.
 - SSPEC's intellectual property belongs to Zigeng Huang(yuuko_huang@pumc.edu.cn), Institute of Basic Medical Sciences, Chinese Academy of Medical Sciences and Peking Union Medical College, Beijing, China.
 - File "emb_total.csv" is the embedded key-phase library that we have extracted.
-- Demo "test.py" can be used to simulate queries, obtain responses, and evaluate the results.
+- File "test.py" in folder "/Demo" can be used to simulate queries, obtain responses, and evaluate the results.
 
 ## Fine-tuning
 > Related files: finetunefilevalid.py, ftexample.jsonl.
