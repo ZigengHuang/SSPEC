@@ -14,7 +14,7 @@ We extracted a portion of real conversations, refined them, and ultimately obtai
 ## Generation
 > Related files: get_response.py, re_get_response.py.
 LLM-generated responses are implemented here.
-- Any alarm from warning system will change the re-generate prompt.
+- Any alarm from alert system will change the re-generate prompt.
 ## Feedback, refinement and warning system
 > Related files: in_eval.py, ragastest.py, risk_detection.py.
 Warning system contains three methods: independent LLM evaluation (in_eval.py), RAG evaluation (ragastest.py) and key-phases matching (risk_detection.py).
