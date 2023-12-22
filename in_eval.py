@@ -9,5 +9,5 @@ def in_eval(question,answer):
         prediction = answer,
         input = question,
         )
-    if (eval_result["score"]<5): return 0   #when GPT's score is under 5, it fails to pass test.
+    if (eval_result["score"]<8): return 0   #when GPT's score is under 8, it fails to pass test.
     else: return 1
