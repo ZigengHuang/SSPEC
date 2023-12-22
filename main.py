@@ -43,7 +43,7 @@ i = 1
 while (reflect!=[1,1,1]):
     i=i+1
     if i>3: 
-        print("warning message") 
+        print("alert message") 
         break
     answer = re_get_response(question,prompt1,prompt2,answer)
     inscore = in_eval(question,answer)
