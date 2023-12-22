@@ -49,7 +49,7 @@ data_samples = {
 {'answer_relevancy':'0.907871823866601', 'faithfulness':'1.0'}
 ```
 
-### Key-Phases Matching
+### Key-Phrases Matching
 This evaluation method is based on risk words extracted from low-quality responses. We organized and summarized them into a risk lexicon. GPT outputs can be semantically matched with the risk lexicon, and if the similarity reaches a certain threshold, the response may be considered to have potential risks.
 
 The file "embs_total.csv" stores embedded risk words.
