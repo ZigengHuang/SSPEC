@@ -24,7 +24,7 @@ The prompt templates consisted of the following components:
 ## Feedback, refinement, and alert system
 > Related files: in_eval.py, ragastest.py, risk_detection.py, re_get_response.py.
 
-Alert system contains three methods: independent LLM evaluation (in_eval.py), RAG evaluation (ragastest.py) and key-phases matching (risk_detection.py).
+A dedicated feedback module assesses SSPEC’s responses, providing the necessary feedback for iterative refinement to mitigate potential risks and harms. It consisted of three components: independent LLM evaluation (in_eval.py), RAG evaluation (ragastest.py) and key-phases matching (risk_detection.py).
 - Any alarm from alert system will change the re-generate prompt.
 
 ### Independent LLM Evaluation
