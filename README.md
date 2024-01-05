@@ -18,6 +18,7 @@ We collected real-world conversation data and curated into prompts for fine-tuni
 - Role of SSPEC: Explicit declaration of SSPEC as a medical assistant, highlighting its diverse skills, including knowledge retrieval, triaging and addressing primary-care concerns.
 - Patient Query: The specific patient query.
 - Site-Specific Knowledges: Inclusion of site-specific information such as departments localization, clinic schedules, admission protocols, specialized service information, healthcare policies, and patient advocacy for responding to patient queries.
+
 Prompted LLM-generated responses are implemented here.
 - Any alarm from alert system will change the re-generate prompt.
 
