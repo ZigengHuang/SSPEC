@@ -13,7 +13,7 @@ We collected real-world conversation data and curated into prompts for fine-tuni
 - The file "finetunefilevalid.py" can be used for quality control of the fine-tuning dataset.
 
 ## Prompt templates
-> Related files: get_response.py, [prompting file].
+> Related files: get_response.py.
 
 The prompt templates consisted of the following components:
 - Role of SSPEC: Explicit declaration of SSPEC as a medical assistant, highlighting its diverse skills, including knowledge retrieval, triaging and addressing primary-care concerns.
