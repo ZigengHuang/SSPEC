@@ -15,17 +15,17 @@ We collected real-world conversation data and curated into prompts for fine-tuni
 ## Prompt templates
 > Related files: get_response.py, re_get_response.py.
 
+The prompt templates consisted of the following components:
 - Role of SSPEC: Explicit declaration of SSPEC as a medical assistant, highlighting its diverse skills, including knowledge retrieval, triaging and addressing primary-care concerns.
 - Patient Query: The specific patient query.
 - Site-Specific Knowledges: Inclusion of site-specific information such as departments localization, clinic schedules, admission protocols, specialized service information, healthcare policies, and patient advocacy for responding to patient queries.
 
-Prompted LLM-generated responses are implemented here.
-- Any alarm from alert system will change the re-generate prompt.
 
 ## Feedback, refinement, and alert system
-> Related files: in_eval.py, ragastest.py, risk_detection.py.
+> Related files: in_eval.py, ragastest.py, risk_detection.py, re_get_response.py.
 
 Alert system contains three methods: independent LLM evaluation (in_eval.py), RAG evaluation (ragastest.py) and key-phases matching (risk_detection.py).
+- Any alarm from alert system will change the re-generate prompt.
 
 ### Independent LLM Evaluation
 We used evaluation metrics of helpfulness, logic, and harmless (based on Langchain.evaluator). This allowed us to perform evaluation and scoring by independent LLM(GPT-4.0).
