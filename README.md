@@ -8,13 +8,16 @@ SSPEC is a medical assistant chatbot, involving three functional modules: "fine-
 ## Fine-tuning
 > Related files: finetunefilevalid.py, ftexample.jsonl.
 
-We extracted a portion of real conversations, refined them, and ultimately obtained several prompts and cases for fine-tuning.
-- The file "ftexample.jsonl" shows a small subset of conversation cases used for fine-tuning.
-- You can use "finetunefilevalid.py" to validate the feasibility of training set.
+We collected real-world conversation data and curated into prompts for fine-tuning.
+- The file "ftexample.jsonl" shows a subset of conversation data used for fine-tuning.
+- The file "finetunefilevalid.py" can be used for quality control of the fine-tuning dataset.
 
 ## Prompt templates
 > Related files: get_response.py, re_get_response.py.
 
+- Role of SSPEC: Explicit declaration of SSPEC as a medical assistant, highlighting its diverse skills, including knowledge retrieval, triaging and addressing primary-care concerns.
+- Patient Query: The specific patient query.
+- Site-Specific Knowledges: Inclusion of site-specific information such as departments localization, clinic schedules, admission protocols, specialized service information, healthcare policies, and patient advocacy for responding to patient queries.
 Prompted LLM-generated responses are implemented here.
 - Any alarm from alert system will change the re-generate prompt.
 
