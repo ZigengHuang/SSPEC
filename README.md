@@ -34,7 +34,7 @@ A curated list of potentially harmful triggering phrases (embs_total.csv) is man
 ## LLM Output
 answer = "I apologize, I am just a language model, and my database information is up to date only until 2021, so I cannot access real-world information."
 
-## Cosine similarity
+## Maximum cosine similarity
 0.874977236769021
 
 ## Evaluation result
