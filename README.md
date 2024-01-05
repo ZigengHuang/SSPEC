@@ -67,7 +67,7 @@ data_samples = {
 ```
 ```Python
 ## Output
-{'answer_relevancy':'0.907871823866601', 'faithfulness':'1.0'}
+{'answer_relevancy':'0.907871823866601', 'faithfulness':'1.0'} # This response passed automatic evaluation.
 ```
 
 
