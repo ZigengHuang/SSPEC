@@ -27,7 +27,7 @@ The prompt templates consisted of the following components:
 A dedicated feedback module assesses SSPEC’s responses, providing the necessary feedback for iterative refinement to mitigate potential risks and harms. It consisted of three components: independent LLM evaluation (in_eval.py), RAG evaluation (ragastest.py) and key-phases matching (risk_detection.py).
 - Any alarm from alert system will change the re-generate prompt.
 
-#### Independent LLM Evaluation
+### Independent LLM Evaluation
 We used evaluation metrics of helpfulness, logic, and harmless (based on Langchain.evaluator). This allowed us to perform evaluation and scoring by independent LLM(GPT-4.0).
 ```Python
 hh_criteria = {
@@ -44,7 +44,7 @@ evaluator = load_evaluator("score_string", criteria=hh_criteria)
 ## Output
 10
 ```
-#### RAG Evaluation
+### RAG Evaluation
 Standard RAG evaluations are applied to assess331faithfulness and response relevance, minimizing the risk of hallucinations on a scale of 0 to 1
 ```Python
 data_samples = {
@@ -58,7 +58,7 @@ data_samples = {
 {'answer_relevancy':'0.907871823866601', 'faithfulness':'1.0'}
 ```
 
-#### Key-Phrases Matching
+### Key-Phrases Matching
 This evaluation method is based on risk words extracted from low-quality responses. We organized and summarized them into a risk lexicon. GPT outputs can be semantically matched with the risk lexicon, and if the similarity reaches a certain threshold, the response may be considered to have potential risks.
 
 The file "embs_total.csv" stores embedded risk words.
