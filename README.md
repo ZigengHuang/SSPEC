@@ -57,7 +57,7 @@ evaluator = load_evaluator("score_string", criteria=hh_criteria)
 10 # This response passed independent LLM evaluation.
 ```
 ### Automatic Evaluation
-Standard RAG evaluations are applied to assess331faithfulness and response relevance, minimizing the risk of hallucinations on a scale of 0 to 1
+Automatic evaluations were applied to assess faithfulness and response relevance, minimizing the risk of hallucinations on a scale of 0 to 1.
 ```Python
 data_samples = {
     'question': [question],
