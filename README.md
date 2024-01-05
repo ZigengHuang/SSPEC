@@ -7,17 +7,20 @@ SSPEC is a medical assistant chatbot, involving three functional modules: "fine-
 
 ## Fine-tuning
 > Related files: finetunefilevalid.py, ftexample.jsonl.
+
 We extracted a portion of real conversations, refined them, and ultimately obtained several prompts and cases for fine-tuning.
 - The file "ftexample.jsonl" shows a small subset of conversation cases used for fine-tuning.
 - You can use "finetunefilevalid.py" to validate the feasibility of training set.
 
 ## Prompt templates
 > Related files: get_response.py, re_get_response.py.
+
 Prompted LLM-generated responses are implemented here.
 - Any alarm from alert system will change the re-generate prompt.
 
 ## Feedback, refinement, and alert system
 > Related files: in_eval.py, ragastest.py, risk_detection.py.
+
 Alert system contains three methods: independent LLM evaluation (in_eval.py), RAG evaluation (ragastest.py) and key-phases matching (risk_detection.py).
 
 ### Independent LLM Evaluation
