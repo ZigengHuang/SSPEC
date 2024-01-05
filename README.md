@@ -24,14 +24,22 @@ The prompt templates consisted of the following components:
 ## Feedback, refinement, and alert system
 > Related files: in_eval.py, ragastest.py, risk_detection.py, re_get_response.py.
 
-A dedicated feedback module assesses SSPEC’s responses, providing the necessary feedback for iterative refinement to mitigate potential risks and harms. It consisted of three components: independent LLM evaluation (in_eval.py), RAG evaluation (ragastest.py) and key-phases matching (risk_detection.py).
-- Any alarm from alert system will change the re-generate prompt.
+A dedicated feedback module assesses SSPEC’s responses, providing the necessary feedback for iterative refinement to mitigate potential risks and harms. It consisted of three components: key-phases matching (risk_detection.py), independent LLM evaluation (in_eval.py), and automatic evaluation (ragastest.py). Any alert from the system will trigger the re-generation of response (re_get_response.py).
 
 ### Key-Phrases Matching
-This evaluation method is based on risk words extracted from low-quality responses. We organized and summarized them into a risk lexicon. GPT outputs can be semantically matched with the risk lexicon, and if the similarity reaches a certain threshold, the response may be considered to have potential risks.
 
-The file "embs_total.csv" stores embedded risk words.
 
+A curated list of potentially harmful triggering phrases (embs_total.csv) is manually assembled. Cosine similarity, calculated at a scale of 0 to 1 using a semantic embedding model ‘text-embedding-ada-002’, determined the alignment between responses and curated phrases.
+```Python
+## LLM Output
+answer = "I apologize, I am just a language model, and my database information is up to date only until 2021, so I cannot access real-world information."
+
+## Cosine similarity
+0.874977236769021
+
+## Evaluation result
+1 # This response failed in key-phrases matching evaluation.
+```
 ### Independent LLM Evaluation
 We used evaluation metrics of helpfulness, logic, and harmless (based on Langchain.evaluator). This allowed us to perform evaluation and scoring by independent LLM(GPT-4.0).
 ```Python
