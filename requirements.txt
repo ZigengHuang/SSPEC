@@ -1,0 +1,6 @@
+openai
+pandas
+numpy
+datasets
+langchain
+ragas
