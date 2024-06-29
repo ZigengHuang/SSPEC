@@ -6,11 +6,9 @@ SSPEC is a medical assistant chatbot, involving three functional modules: "fine-
 
 
 ## Fine-tuning
-> Related files: finetunefilevalid.py, ftexample.jsonl.
 
 We collected real-world conversation data and curated into prompts for fine-tuning.
-- The file "ftexample.jsonl" shows a subset of conversation data used for fine-tuning.
-- The file "finetunefilevalid.py" can be used for quality control of the fine-tuning dataset.
+
 
 ## Prompt templates
 > Related files: get_response.py.
